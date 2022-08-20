@@ -1,1 +1,14 @@
 El Script de la creacion de la base de datos y la tabla corespondiente
+
+-- Volcando estructura de base de datos para ml_tutoriales
+CREATE DATABASE IF NOT EXISTS `ml_tutoriales` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `ml_tutoriales`;
+
+-- Volcando estructura para tabla ml_tutoriales.empleado
+CREATE TABLE IF NOT EXISTS `empleado` (
+  `codigo` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) DEFAULT '0',
+  `salario` int DEFAULT NULL,
+  PRIMARY KEY (`codigo`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
